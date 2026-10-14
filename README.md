@@ -8,6 +8,10 @@ A clean, responsive React application built with **React 19**, **Vite**, and **V
 
 ---
 
+![Student Task Manager UI Preview](./ui_screenshot.jpeg)
+
+---
+
 ## 📌 Features
 
 ### Required Core Features
