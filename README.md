@@ -81,6 +81,6 @@ The project includes 9 automated tests in `src/__tests__/App.test.jsx` covering 
 
 ## 👨‍💻 Author & Submission
 
-- **Student / Developer:** Arka Karmoker
-- **GitHub Profile:** [@ArkaKarmoker](https://github.com/ArkaKarmoker)
-- **Repository:** [https://github.com/ArkaKarmoker/student-task-manager](https://github.com/ArkaKarmoker/student-task-manager)
+- Developed by [Arka Karmoker](https://github.com/ArkaKarmoker)
+- Project Repository: [https://github.com/ArkaKarmoker/student-task-manager](https://github.com/ArkaKarmoker/student-task-manager)
+
