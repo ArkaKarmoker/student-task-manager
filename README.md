@@ -43,6 +43,8 @@ A clean, responsive React application built with **React 19**, **Vite**, and **V
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/ArkaKarmoker/student-task-manager.git
+```
+```bash
 cd student-task-manager
 ```
 
