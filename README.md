@@ -40,23 +40,29 @@ A clean, responsive React application built with **React 19**, **Vite**, and **V
 
 ## 🚀 Getting Started
 
-### 1. Installation
+### 1. Clone the repository
+```bash
+git clone https://github.com/ArkaKarmoker/student-task-manager.git
+cd student-task-manager
+```
+
+### 2. Install dependencies
 ```bash
 npm install
 ```
 
-### 2. Run Development Server
+### 3. Run Development Server
 ```bash
 npm run dev
 ```
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-### 3. Run Automated Tests
+### 4. Run Automated Tests
 ```bash
 npm test
 ```
 
-### 4. Build for Production
+### 5. Build for Production
 ```bash
 npm run build
 ```
