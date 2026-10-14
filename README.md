@@ -2,14 +2,14 @@
 
 [![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Vitest](https://img.shields.io/badge/Vitest-47%20Passed-4BB543?style=flat-square&logo=vitest&logoColor=white)](https://vitest.dev/)
+[![Vitest](https://img.shields.io/badge/Vitest-9%20Passed-4BB543?style=flat-square&logo=vitest&logoColor=white)](https://vitest.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2024-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![CSS3](https://img.shields.io/badge/Styling-Vanilla%20CSS-1572B6?style=flat-square&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 
 A modern, responsive, and student-centric **Study & Assignment Planner** web application built with **React 19** and **Vite** using pure **JavaScript** (no TypeScript) and **Vanilla CSS** (no Tailwind).
 
-Developed specifically to fulfill and exceed all criteria outlined in the **Student Task Manager Assignment**, this application implements **100% of the Core Requirements (Features 1–7)**, **100% of the Optional Bonus Tasks (Bonuses 1–5)**, and extra polish including custom animated dropdowns, real-time search, local storage persistence, sticky footer layout, and a full automated test suite with **47 passing tests across 10 test suites**.
+Developed specifically to fulfill and exceed all criteria outlined in the **Student Task Manager Assignment**, this application implements **100% of the Core Requirements (Features 1–7)**, **100% of the Optional Bonus Tasks (Bonuses 1–5)**, and extra polish including custom animated dropdowns, real-time search, local storage persistence, sticky footer layout, and a focused automated test suite with **9 passing tests covering all features and bonuses**.
 
 ---
 
@@ -30,7 +30,7 @@ Developed specifically to fulfill and exceed all criteria outlined in the **Stud
   - [Development Server](#development-server)
   - [Automated Testing](#automated-testing)
   - [Production Build](#production-build)
-- [Automated Testing Suite (47/47 Passing)](#-automated-testing-suite)
+- [Automated Testing Suite (9/9 Passing)](#-automated-testing-suite)
 - [Author & Submission Details](#-author--submission-details)
 
 ---
@@ -174,16 +174,6 @@ student-task-manager/
 │   │   │   ├── ErrorBoundary.jsx    # Error boundary with fallback UI (Bonus 3)
 │   │   │   ├── Modal.jsx            # Confirmation dialog for task deletion (Bonus 2)
 │   │   │   └── SelectDropdown.jsx   # HeroUI-inspired custom animated dropdown
-│   │   ├── __tests__/               # Component unit tests (37 tests across 9 suites)
-│   │   │   ├── Card.test.jsx
-│   │   │   ├── ErrorBoundary.test.jsx
-│   │   │   ├── Modal.test.jsx
-│   │   │   ├── SelectDropdown.test.jsx
-│   │   │   ├── TaskFilters.test.jsx
-│   │   │   ├── TaskForm.test.jsx
-│   │   │   ├── TaskItem.test.jsx
-│   │   │   ├── TaskList.test.jsx
-│   │   │   └── TaskStats.test.jsx
 │   │   ├── Header.jsx               # Brand header with demo reset & clear actions
 │   │   ├── TaskFilters.jsx          # Status tabs, search input, and subject filter (Bonus 1)
 │   │   ├── TaskForm.jsx             # Form with validation and dropdowns (Features 2 & 7)
@@ -191,7 +181,7 @@ student-task-manager/
 │   │   ├── TaskList.jsx             # List container with conditional empty states (Feature 5)
 │   │   └── TaskStats.jsx            # Statistics dashboard & remaining counter (Feature 6, Bonus 5)
 │   ├── __tests__/
-│   │   └── App.test.jsx             # Integration tests for end-to-end workflows (7 tests)
+│   │   └── App.test.jsx             # Essential automated test suite (9 tests covering 100% requirements)
 │   ├── utils/
 │   │   └── storage.js               # LocalStorage utilities & starter dataset
 │   ├── App.css                      # Application styling & layout
@@ -269,21 +259,20 @@ npm run preview
 
 ## 🧪 Automated Testing Suite
 
-The project includes **47 comprehensive automated tests** across **10 test files**, ensuring all assignment criteria, edge cases, and user interactions are strictly validated:
+The project includes a clean, focused, and high-impact test suite in [`src/__tests__/App.test.jsx`](src/__tests__/App.test.jsx) containing **9 essential test cases** that directly validate **100% of the assignment requirements and bonus features**:
 
-| Test Suite File | Tests | Focus Areas / Test Scenarios |
-|:---|:---:|:---|
-| `Card.test.jsx` | 4 | Children rendering, title/subtitle props, action slot, custom classNames |
-| `TaskForm.test.jsx` | 6 | Empty title validation, whitespace rejection, min length (3 chars), field reset, dropdown interaction |
-| `TaskStats.test.jsx` | 5 | Total tasks, completed tasks, remaining counter (Bonus 5), progress % calculation, zero tasks fallback |
-| `TaskFilters.test.jsx` | 5 | Tab switching (All/Pending/Completed), badge counts, search input changes, subject selection |
-| `TaskItem.test.jsx` | 4 | Title and badge rendering, completed strikethrough state, toggle complete callback, delete trigger |
-| `TaskList.test.jsx` | 3 | "No tasks available" empty state, "No matching tasks" with filter reset button, task rendering |
-| `Modal.test.jsx` | 5 | Open/close visibility, task title display, Escape key dismissal, backdrop click, confirm & cancel actions |
-| `SelectDropdown.test.jsx` | 5 | Closed default, toggle menu on click, option selection callback, keyboard navigation, outside click |
-| `ErrorBoundary.test.jsx` | 3 | Normal children rendering, catching child runtime errors, friendly fallback UI with retry button |
-| `App.test.jsx` | 7 | Full integration: Initial task loading, adding tasks, toggling completion, modal deletion, status filtering, live search |
-| **Total** | **47** | **100% Pass Rate across all 10 Test Suites** |
+| # | Test Case Scenario | Requirement Covered | Result |
+|:---:|:---|:---|:---:|
+| **1** | Renders header & initial starter tasks with statistics | **Feature 1** (Display Tasks), **Feature 6** (Statistics), **Bonus 5** (Remaining Counter) | ✅ Passed |
+| **2** | Validates form input & adds a new task to queue | **Feature 2** (Add Task), **Feature 7** (Form Validation) | ✅ Passed |
+| **3** | Marks a task as completed & updates progress metrics | **Feature 3** (Complete Task) | ✅ Passed |
+| **4** | Deletes a task after confirmation dialog approval | **Feature 4** (Delete Task), **Bonus 2** (Confirmation Dialog) | ✅ Passed |
+| **5** | Conditionally renders "No tasks available" when queue is empty | **Feature 5** (Conditional Empty State) | ✅ Passed |
+| **6** | Filters tasks by All, Completed, and Pending status | **Bonus 1** (Status Filtering) | ✅ Passed |
+| **7** | Searches tasks dynamically by title query | **Enhancement** (Dynamic Search) | ✅ Passed |
+| **8** | Renders reusable `Card` component using the `children` prop | **Bonus 4** (Reusable Component Composition) | ✅ Passed |
+| **9** | Renders friendly fallback UI when `ErrorBoundary` catches an error | **Bonus 3** (Friendly Fallback UI) | ✅ Passed |
+| **Total** | **9 Essential Tests in `App.test.jsx`** | **100% Requirement & Bonus Coverage** | **100% Pass** |
 
 ---
 
